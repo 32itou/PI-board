@@ -1,12 +1,15 @@
+<!DOCTYPE html>
 <html>
-<meta charset="UTF-8"> 
+
 <head>
-	<title>Magic Mirror</title>
-	<style type="text/css"><?php include('css/main.css') ?></style>
+	<title>PI Board</title>
 	<link rel="stylesheet" type="text/css" href="css/weather-icons.css">
-	<meta name="google" value="notranslate" />
+        <link rel="stylesheet" type="text/css" href="css/main.css">
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+        <meta charset="UTF-8"> 
 </head>
+
 <body>
 
 	<div class="top left">

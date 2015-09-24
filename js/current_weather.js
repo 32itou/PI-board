@@ -36,19 +36,15 @@ function get_current_data() {
 	request.send(null);	 
 	
 	request.onreadystatechange = function get_data() {
-		if (request.readyState == 4) {
+		if (request.readyState === 4) {
 			var text = request.responseText;
 			var n = text.search("PUY"); 
 		
 			var raw_data = text.substring(n, n + 64);
 			current_data = raw_data.split('|');
-console.log('loop');
-			console.log(current_data);
-
-		}
-	}
-
- return current_data;	
+                    }
+            }   
+return  current_data;    	
 }
 
 function get_XmlHttp() {
@@ -75,7 +71,7 @@ function updateCurrentWeatherData(data)
 	request.send(null);	
 
 	request.onreadystatechange = function() {
-		if (request.readyState == 4) {				
+		if (request.readyState === 4) {				
 			
 			var text = request.responseText;
 			var n = text.search("PUY"); 
@@ -91,17 +87,15 @@ function updateCurrentWeatherData(data)
 			var sunrise = new Date(json.sys.sunrise*1000).toTimeString().substring(0,5);
 			var sunset = new Date(json.sys.sunset*1000).toTimeString().substring(0,5);
 			var sunString = '<span class="wi wi-sunrise xdimmed"></span> ' + sunrise;
-			if (json.sys.sunrise*1000 < now && json.sys.sunset*1000 > now) {
-				sunString = '<span class="wi wi-sunset xdimmed"></span> ' + sunset;
-			}
-
+                        sunString += '<span class="wi wi-sunset xdimmed"></span> ' + sunset;
+			
 			$('.windsun').updateWithText(windString+' '+sunString, 1000);
 			
 			var icon = $('<span><span/>').addClass('dimmed').addClass('wi').addClass('wi-thermometer');
 			var temptext = '<span>' +temp + '&deg;</span> ';
 			$('.temp').updateWithText(icon.outerHTML() +'   '+ temp + '&deg;', 1000);
 		}
-	}
+        }
 }	
 
 function updateSwissWeatherData(data)
