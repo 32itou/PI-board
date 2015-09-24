@@ -1,0 +1,124 @@
+body {
+	background: black;
+	width: 100%;
+	height: 100%;
+	margin:0;
+	
+}
+
+* {
+	color : white;
+	font-size: large;
+	}
+#page {
+	
+	}
+#top {
+	width: 100%;
+	position:relative;
+	left:0;
+	display: inline-block;
+}
+#date-time {
+	display: inline-block;
+	position: relative;
+	left: 0;
+	width: 290px;
+	text-align: left;
+	border: 2px solid white;
+	border-radius: 25px;
+	}
+#hours{	
+	display: inline-block;
+	position: relative;
+	left: 10px;
+	text-align: center;
+	vertical-align:middle;
+	font-size: 80pt;
+	width: 130px;
+	}
+#second{
+	vertical-align: top;
+	display: inline-block;
+	position: relative;
+	left: 120;
+	padding-top:30px;
+	font-size: 20pt;
+}
+#Day {
+	margin-top: -20px;
+	text-align:center;
+	font-size: 20pt;
+	}
+#current{
+	vertical-align: top;
+	border: 2px solid blue;
+	display: inline-block;
+	position: relative;
+	left: 10;
+	width:300px;
+	height:50px;
+	font-size: 28pt;
+
+}
+#current div{
+	font-size: 30px;
+}
+
+.wi-thermometer-exterior {
+	position:relative;
+	display: inline-block;
+	left:5;
+}
+#temp {
+	position:relative;
+	left:10px;
+	display: inline-block;
+}
+#winddirection {
+	position:relative;
+	left:15px;
+	display: inline-block;
+}
+#windspeed {
+	position:relative;
+	left:15px;
+	display: inline-block;
+}
+
+
+
+#bottom {
+   display: inline-block;
+    bottom:0;
+	position:relative;
+	width:100%;
+	margin-bottom:0;
+	padding:0;
+	margin-top:20px;
+	height:250px;
+	
+}
+#news {
+	height: 100%;
+	
+}
+
+.rssHeader {
+	display: none;
+}
+.rssRow div {
+	display:none;
+}
+.rssRow a {
+	font-size:25px;
+	text-decoration: none;
+	color: #F3E2A9;
+
+}
+.rssRow p {
+	font-size:15px;
+	margin-top:-12;
+}
+
+
