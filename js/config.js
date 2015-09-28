@@ -12,7 +12,6 @@ var weatherParams = {
 };
 
 
-
 //time for the today weather forecast
 var timeshift = [ 3, 12];
 

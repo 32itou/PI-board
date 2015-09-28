@@ -1,5 +1,6 @@
 
 function get_direction_icon(wind_direction) {
+
 	var wind_dir_symbol = '';
 		if (wind_direction <= 22.5 || wind_direction >= 337.5){
 			wind_dir_symbol = 'wi-wind-north';
@@ -25,6 +26,7 @@ function get_direction_icon(wind_direction) {
 		if (wind_direction > 292.5 && wind_direction < 337.5){
 			wind_dir_symbol = 'wi-wind-north-west';
 		}
+
 	return wind_dir_symbol;
 }
 
@@ -82,8 +84,9 @@ function updateCurrentWeatherData(data)
 			var wind = current_data[6];
 			var wind_direction = current_data[5];
 			var wind_dir_icon = get_direction_icon(wind_direction);		
-			var windicon = $('<span class="wi xdimmed small">').addClass(wind_dir_icon);
-			var windString = windicon.outerHTML() + '</span> ' + wind + ' km/h' ;			
+			var windicon = $('<span class="wi xdimmed">').addClass(wind_dir_icon);
+			var windString = windicon.outerHTML() +' ' + wind + ' km/h' ;
+                        console.log(windString);
 			var sunrise = new Date(json.sys.sunrise*1000).toTimeString().substring(0,5);
 			var sunset = new Date(json.sys.sunset*1000).toTimeString().substring(0,5);
 			var sunString = '<span class="wi wi-sunrise xdimmed"></span> ' + sunrise;
