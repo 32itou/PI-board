@@ -12,10 +12,11 @@
 
 <body>
 
-    <ul id="menu" class="small nav nav-pills">
-	<li><a title="Temperature" href="/">Home</a></li>
-	<li><a title="Pressure" href="/about">About Me</a></li>
-	<li><a title="Contact Me" href="/contact">Contact Me</a></li>
+    <ul id="menu" class="xsmall">
+	<li><a title=" Temperature" href="/"> Temperature</a></li>
+	<li><a title=" Pressure" href="/about"> Pressure</a></li>
+	<li><a title=" Contact Me" href="/contact">Contact Me</a></li>
+        <li><a title=" Contarct Me" href="/ctrontact">Contact Metr</a></li>
     </ul>
     <div id="pagehome" onclick="showMenu()">
         <div id="topHorizontal">
