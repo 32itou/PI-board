@@ -23,6 +23,6 @@ while read line;do
 				
 		fi
 done < $FILE
-rrdtool update remote.rrd N:$temp:$pressure
+rrdtool update home/pi/database/rrd-weather.rrd N:$temp:$pressure
 
 
