@@ -86,7 +86,6 @@ function updateCurrentWeatherData(data)
 			var wind_dir_icon = get_direction_icon(wind_direction);		
 			var windicon = $('<span class="wi xdimmed">').addClass(wind_dir_icon);
 			var windString = windicon.outerHTML() +' ' + wind + ' km/h' ;
-                        console.log(windString);
 			var sunrise = new Date(json.sys.sunrise*1000).toTimeString().substring(0,5);
 			var sunset = new Date(json.sys.sunset*1000).toTimeString().substring(0,5);
 			var sunString = '<span class="wi wi-sunrise xdimmed"></span> ' + sunrise;

@@ -1,87 +1,28 @@
-#menu {
-    display:none;
+#pagemenu {
+    marging:20px;
+}
+
+
+.menucolumn {
+    width: 30%;
+    height: 70%;
+    background:red;
+
+    margin:20px;
+
+    
+}
+
+.menubottom {
+    width:100%;
     position:absolute;
-    top:0;
-    right:0;
-    width:200px;
-    height:100%;
-    list-style:none;
-    z-index:10;
-    background: #273D7A;
-    padding:0;
-    margin-left:5px;
-    margin:0;
-    line-height: 120%;
-
+    bottom:20px;
 }
+.floatleft {
+     display: block;
+ }
 
+.btn {
+    margin-top:50px;
 
-#menu ul {
-    display: inline-block;
-}
-
-#menu li a, li{
-    padding-left:5px;
-      display: block;
-      //color: white;
-      text-decoration:none;
-      line-height: 220%;
-      color: #aaa;
-      border-bottom-style: solid;
-      border-bottom-width: 1px;
-      
-}
-
-#menu li a:hover {
-      color: white;
-      //background-color: #fff; }
-/* Animations */
-
-#pagehome, #menu {
-	-webkit-backface-visibility: hidden;
-	-webkit-perspective: 1000;
-}
-
-/* Hide the menu unless it's animating or visible */
-.animating #menu, .menu-visible #menu {
-	display: block;
-}
-
-/***
-* If the animating class is present then apply
-* the CSS transition to #page over 250ms.*/
-
-.animating #pagehome {
-	transition: transform .25s ease-in-out;
-	-webkit-transition: -webkit-transform .25s ease-in-out;
-}
-
-/***
-* If the left class is present then transform
-* the #page element 240px to the left.
-*/	
-.animating.left #pagehome {
-	transform: translate3d( -240px, 0, 0 );
-	-webkit-transform: translate3d( -240px, 0, 0 );
-}
-
-/***
-* If the right class is present then transform
-* the #page element 240px to the right.
-*/
-.animating.right #pagehome {
-	transform: translate3d( 240px, 0, 0 );
-	-webkit-transform: translate3d( 240px, 0, 0 );
-}
-
-/***
-* If the menu-visible class is present then
-* shift the #page 240px from the right edge
-* via position: absolute to keep it in the 
-* open position. When .animating, .left and
-* .right classes are not present the CSS
-* transform does not apply to #page.
-*/
-.menu-visible #pagehome {
-	right: 240px;
 }
